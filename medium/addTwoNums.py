@@ -27,12 +27,12 @@ and return the resulting sum as a new linked list in reverse order.
 
 
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+     def __init__(self, val=0, next=None):
+         self.val = val
+         self.next = next
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         # with ListNode access via var.val and var.next print(l1.val)
         l3 = ListNode(0) # dummy head node for new linkedList
         curNode = l3
