@@ -15,6 +15,8 @@ and expand outwards while the characters on both sides are equal.
 
 '''
 
+from typing import Tuple
+
 
 
 class Solution:
@@ -27,7 +29,7 @@ class Solution:
 
     '''
 
-    def expandAroundCenter(self, s: str, left: int, right: int) -> (int, int):
+    def expandAroundCenter(self, s: str, left: int, right: int) -> Tuple[int, int]:
         while left >= 0 and right < len(s) and s[left] == s[right]:
             left -= 1
             right += 1
